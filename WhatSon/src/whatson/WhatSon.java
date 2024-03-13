@@ -1,11 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package whatson;
 public class WhatSon {
     public static void main(String[] args) {
-        hifewhfiewhifehi
+        System.out.println("Hello, What son!");
+        
     }
     
 }
