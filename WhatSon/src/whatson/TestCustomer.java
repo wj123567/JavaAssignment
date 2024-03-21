@@ -31,6 +31,7 @@ public class TestCustomer {
                 System.out.print("Enter customer ID: ");
                 String inputCustID = scan.nextLine();
                 customer.findCustInfo(inputCustID);
+                customer.printCustDetail();
                 break;
             case 3:
                 System.out.print("Enter customer ID: ");
