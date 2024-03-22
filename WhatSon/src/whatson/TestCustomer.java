@@ -31,21 +31,21 @@ public class TestCustomer {
                 System.out.print("Enter customer ID: ");
                 String inputCustID = scan.nextLine();
                 customer.findCustInfo(inputCustID);
-                customer.printCustDetail();
+                System.out.print(customer.toString());
                 break;
             case 3:
                 System.out.print("Enter customer ID: ");
                 String inputCustID2 = scan.nextLine();
                 customer.findCustInfo(inputCustID2);
                 customer.updateCustPoint(200);
-                customer.printCustDetail();
+                System.out.print(customer.toString());
                 break;
             case 4:
                 System.out.print("Enter customer ID: ");
                 String inputCustID3 = scan.nextLine();
                 customer.findCustInfo(inputCustID3);
                 customer.updateCustPointExpDate();
-                customer.printCustDetail();
+                System.out.print(customer.toString());
                 break;
             default:
                 System.out.println("Please enter a valid number");

@@ -89,7 +89,7 @@ public class Customer {
         custBirthDay=scan.nextLine();
                 
         recordNewCustInfo();
-        printCustDetail();
+        toString();
     }
     
      public void recordNewCustInfo(){
@@ -209,19 +209,7 @@ public class Customer {
         }
         }
     }
-         
-      public void printCustDetail(){
-        System.out.println("Customer Information\n====================================");
-        System.out.println(custID);
-        System.out.println(custName);
-        System.out.println(custPhone);
-        System.out.println(custEmail);
-        System.out.println(custGender);
-        System.out.println(custBirthDay);
-        System.out.println(custPoint);
-        System.out.println(custPointExpDate);
-      }
-      
+        
       public void updateCustPoint(double updatePoint){
           custPoint += updatePoint;
           updateExistingCustInfo();
@@ -234,6 +222,20 @@ public class Customer {
         custPointExpDate=newDate.format(dateFormat);
         updateExistingCustInfo();
 
+      }
+      
+               
+      public String toString(){
+          return "\nCustomer Information\n====================================\n"
+                  + "Customer ID: " +custID
+                  +"\nCustomer Name: "+ custName
+                  +"\nCustomer Phone No: "+ custPhone
+                  +"\nCustomer Email Address: " + custEmail
+                  +"\nCustomer Gender: " + custGender
+                  +"\nCustomer Birth Date: "+ custBirthDay
+                  +"\nCustomer Reward Point: " + custPoint
+                  +"\nReward Point Expiry Date: " + custPointExpDate
+                  +"\n";
       }
       
     }
